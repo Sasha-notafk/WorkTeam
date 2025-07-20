@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMaster - Профессиональные строительные услуги</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Ворк<span>Тим</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#map">Контакты</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="tel:375297981085" class="btn">+375 (29) 798-10-85</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Строим будущее вместе</h1>
+                <p>Профессиональные строительные услуги с гарантией качества и соблюдением сроков</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn">Наши услуги</a>
+                    <a href="#map" class="btn btn-outline">Заказать консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section id="services" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Наши услуги</h2>
+            <p>Мы предлагаем полный спектр строительных услуг для реализации ваших проектов</p>
+        </div>
+        <div class="services-grid">
+            <!-- Левая колонка (3 карточки) -->
+            <div class="services-column">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Строительство домов</h3>
+                    <p>Возведение частных домов и коттеджей по индивидуальным проектам с гарантией качества</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Ремонт и отделка</h3>
+                    <p>Качественные отделочные работы любой сложности с использованием современных материалов</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Коммерческое строительство</h3>
+                    <p>Строительство офисных зданий, торговых центров и промышленных объектов</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+            
+            <!-- Правая колонка (4-я карточка) -->
+            <div class="service-card featured-service">
+                <div class="service-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>Наш магазин</h3>
+                <ul class="service-features">
+                    <li>Автоматическая Система полива</li>
+                    <li>Ремонт и отделка</li>
+                    <li>Строительство домов</li>
+                </ul>
+                <a href="#" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Основная сетка */
+    .services-grid {
+        display: flex;
+        gap: 25px;
+    }
+    
+    /* Левая колонка с 3 карточками */
+    .services-column {
+        flex: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    /* Правая колонка (4-я карточка) */
+    .featured-service {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Стили для списка в 4-й карточке */
+    .service-features {
+        padding-left: 20px;
+        margin: 15px 0;
+    }
+    
+    .service-features li {
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    .service-features li:before {
+        content: "•";
+        position: absolute;
+        left: -15px;
+        color: #2ecc71;
+    }
+</style>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1073&q=80" alt="Наша команда">
+                </div>
+                <div class="about-text">
+                    <h2>О компании ВоркТим</h2>
+                    <p>С 2008 года мы реализовали более 250 проектов различной сложности, от частных домов до крупных коммерческих объектов. Наша команда профессионалов гарантирует качество и соблюдение сроков.</p>
+                    <p>Мы используем только современные материалы и технологии, что позволяет нам создавать долговечные и безопасные сооружения.</p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h4>Высокое качество</h4>
+                                <p>Сертифицированные материалы и профессиональные бригады</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4>Соблюдение сроков</h4>
+                                <p>Четкое планирование и контроль на каждом этапе строительства</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div>
+                                <h4>Фиксированная цена</h4>
+                                <p>Прозрачная смета без скрытых платежей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши проекты</h2>
+                <p>Посмотрите реализованные проекты, которыми мы гордимся</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active">Все проекты</button>
+                <button class="filter-btn">Частные дома</button>
+                <button class="filter-btn">Коммерческие</button>
+                <button class="filter-btn">Реконструкция</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Проект 1" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Современный коттедж в Подмосковье</h3>
+                        <p>Площадь: 240 м² | Срок: 8 месяцев</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Проект 2" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Офисный комплекс в Москве</h3>
+                        <p>Площадь: 1200 м² | Срок: 14 месяцев</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Проект 3" class="project-image">
+                    <div class="project-overlay">
+                        <h3>Загородный дом в стиле модерн</h3>
+                        <p>Площадь: 320 м² | Срок: 10 месяцев</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ВоркТим</h3>
+                    <p>Профессиональные строительные услуги с гарантией качества. Работаем по Бресту и области.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#map">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Строительство домов</a></li>
+                        <li><a href="#">Ремонт и отделка</a></li>
+                        <li><a href="#">Коммерческое строительство</a></li>
+                        <li><a href="#">Проектирование</a></li>
+                        <li><a href="#">Реконструкция</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+78001234567"><i class="fas fa-phone"></i> +375 (29) 798-10-85</a></li>
+                        <li><a href="mailto:info@buildmaster.ru"><i class="fas fa-envelope"></i> a.i.golovei@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> г. Брест, ул. Луцкая, д. 68</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 ВоркТим. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileToggle.querySelector('i').classList.toggle('fa-times');
+        });
+        
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    mobileToggle.querySelector('i').classList.toggle('fa-bars');
+                    mobileToggle.querySelector('i').classList.toggle('fa-times');
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        
+            // Add marker
+            new google.maps.Marker({
+                position: location,
+                map: map,
+                title: 'ВоркТим Office'
+            });
+        
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcQQxZ7zqFbJfDkP2T3t8QYV4t8DqY7t8&callback=initMap"></script>
+</body>
+</html>
